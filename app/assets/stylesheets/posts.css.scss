@@ -1,0 +1,59 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  border-style: solid;
+  border-width: 20;
+  border-color: #FFCC33; }
+
+a:visited {
+  color: #000000; }
+
+a:active {
+  color: #000000; }
+
+a:hover {
+  color: #000000; }
+
+span.title {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: r; }
+
+span.write {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif; 
+  width:400px;
+}
+
+span.set {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+span.content {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.box1 {
+  border-color: #999999;
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 1px;
+  border-left-width: 0px;
+  color: #0000FF; }
+
+input.button {
+  height: 25px;
+  width: 80px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+
+td{
+	vertical-align: top;
+}
+td.middle{
+	vertical-align: middle;
+}

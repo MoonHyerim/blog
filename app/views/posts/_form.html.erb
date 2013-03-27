@@ -1,0 +1,51 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table width="50%">
+
+<tr>
+<td width="40"  valign="top">
+<span class="write">name</span>
+</td>
+<td >
+    <%= f.text_field :writer, size: 20, maxlength:20 %><br><br>
+</td>
+</tr>
+
+<tr>
+<td>
+<span class="write">title</span>
+</td>
+<td>
+    <%= f.text_field :title, size:80, maxlength:80 %><br><br>
+</td>
+</tr>
+
+<tr>
+<td width="40"  class="middle">
+<span class="write">content</span>
+</td>
+<td>
+    <%= f.text_area :content, rows:25, cols:80 %>
+</td>
+</tr>
+
+<tr>
+<td width="50%" height="30" align="center" valign="middle" colspan="2">
+    <%= f.submit 'submit'%>
+    <%= button_to 'cancel', posts_path%>
+
+</td>
+<tr>
+</table>
+<% end %>
