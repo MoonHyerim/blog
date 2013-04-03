@@ -1,10 +1,10 @@
 
-
+<!--화면에 보이는 index-->
 <table width="100%" height="100%">
 
 <tr>
 <td width="100%" height="70" align="center" valign="top">
-<a href="#bottom"><img src="assets/top_img.png" border="0"></a>
+<a href="#bottom"><img src="assets/top_img.png" border="0"></a> <!--화면에 이미지 표현-->
 </td>
 </tr>
 <% @posts.each do |post| %>
@@ -12,7 +12,9 @@
 <td width="50%" height="100" align="center" valign="middle">
 <span class="title"><%= post.title %></span><br><br>
 <span class="write"><%= post.writer %></span><br>
-<span class="set"><%= link_to 'mod', edit_post_path(post) %> <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+<span class="set"><%= link_to 'mod', edit_post_path(post) %> 
+	<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</span>
 <br>
 </td>
 </tr>
@@ -21,7 +23,7 @@
 <td width="50%" height="100%" align="center" valign="top">
 <span class="content"><%= post.content %></span><br><br>
 <% post_time = post.created_at %>
-<%= post_time.strftime("%Y년 %m월%d일 %H시%M분%S초") %>
+<%= post_time.strftime("%Y년 %m월%d일 %H시%M분%S초") %> <!--timezone 설정-->
 
 <hr width="100" align="center">
 </td>

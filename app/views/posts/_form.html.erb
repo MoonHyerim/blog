@@ -43,7 +43,9 @@
 <tr>
 <td width="50%" height="30" align="center" valign="middle" colspan="2">
     <%= f.submit 'submit'%>
-    <%= button_to 'cancel', posts_path%>
+    <input type="button" name="cancel_button" value="cancel" onclick="history.go(-1)">
+        <!--cancel 버튼 클릭시 처음 화면으로-->
+        <!--도저히 모르겠어용....-->
 
 </td>
 <tr>

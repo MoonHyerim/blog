@@ -1,4 +1,11 @@
 Blog::Application.routes.draw do
+  get "comments/create"
+
+  get "comments/destroy"
+
+  get "upload/index"
+
+  
   resources :posts
 
 
