@@ -1,3 +1,10 @@
+ <!--<table width="100%" height="100%">
+<tr>
+<td width="100%" height="50" align="center" bgcolor="#FFCC33" >
+</td>
+</tr>
+
+@-->
 <%= form_for(@post) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -21,7 +28,6 @@
     <%= f.text_field :writer, size: 20, maxlength:20 %><br><br>
 </td>
 </tr>
-
 <tr>
 <td>
 <span class="write">title</span>
@@ -44,8 +50,6 @@
 <td width="50%" height="30" align="center" valign="middle" colspan="2">
     <%= f.submit 'submit'%>
     <input type="button" name="cancel_button" value="cancel" onclick="history.go(-1)">
-        <!--cancel 버튼 클릭시 처음 화면으로-->
-        <!--도저히 모르겠어용....-->
 
 </td>
 <tr>

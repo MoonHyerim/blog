@@ -1,4 +1,9 @@
 class Post < ActiveRecord::Base
   attr_accessible :content, :title, :writer
-  has_many :comments, :dependent => :destroy
+  
+  validates :name, :presence => true
+  validates :title, :presence => true
+  					
+  has_many :comments
 end
+
